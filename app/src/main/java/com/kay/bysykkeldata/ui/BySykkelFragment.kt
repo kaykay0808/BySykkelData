@@ -25,6 +25,11 @@ class BySykkelFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        viewModel.getInfo()
+        binding.swipeRefreshLayout.setOnRefreshListener{viewModel.getInfo()}
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

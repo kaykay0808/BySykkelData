@@ -5,6 +5,7 @@ import com.kay.bysykkeldata.data.BySykkelApi
 import com.kay.bysykkeldata.data.BySykkelRepository
 import com.kay.bysykkeldata.ui.BySykkelViewModel
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonConfiguration
 import okhttp3.MediaType.Companion.toMediaType
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -16,7 +17,7 @@ val appModule = module {
         val contentType = "application/json".toMediaType()
         val retrofit = Retrofit.Builder()
             .baseUrl("https://gbfs.urbansharing.com/oslobysykkel.no/")
-            .addConverterFactory(Json.asConverterFactory(contentType))
+            .addConverterFactory(Json{ignoreUnknownKeys = true}.asConverterFactory(contentType))
             .build()
         retrofit.create(BySykkelApi::class.java)
     }
