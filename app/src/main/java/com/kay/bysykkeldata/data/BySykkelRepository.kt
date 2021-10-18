@@ -1,4 +1,4 @@
 package com.kay.bysykkeldata.data
 
-class BySykkelRepository {
+class BySykkelRepository (val api: BySykkelApi) {
 }
