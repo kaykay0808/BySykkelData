@@ -30,8 +30,8 @@ class BySykkelAdapter: RecyclerView.Adapter<BySykkelAdapter.MyViewHolder>() {
     }
 
     // not sure if iam gonna use this function
-    fun setData(bySykkelUiModel: List<BySykkelUiModel>){
-        this.dataList = bySykkelUiModel
+    fun setData(newData: List<BySykkelUiModel>){
+        this.dataList = newData
         notifyDataSetChanged()
     }
 }

@@ -1,5 +1,6 @@
 package com.kay.bysykkeldata.data
 
+import androidx.lifecycle.LiveData
 import com.kay.bysykkeldata.ui.BySykkelUiModel
 
 class BySykkelRepository(val api: BySykkelApi) {
