@@ -6,9 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kay.bysykkeldata.databinding.BySykkelFragmentBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -21,7 +18,6 @@ class BySykkelFragment : Fragment() {
 
     private val viewModel: BySykkelViewModel by viewModel()
     private val adapter: BySykkelAdapter by lazy { BySykkelAdapter() }
-
 
 
     override fun onCreateView(
@@ -43,17 +39,18 @@ class BySykkelFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireActivity())
 
         // observe LiveData
-        viewModel.liveData.observe(viewLifecycleOwner, {setupList(it)})
-        viewModel.errorLiveData.observe(viewLifecycleOwner){
-            if (it == null){
+        viewModel.liveData.observe(viewLifecycleOwner, { setupList(it) })
+        viewModel.errorLiveData.observe(viewLifecycleOwner) {
+            if (it == null) {
                 // if the error is null, show the list and hide the error textview
                 binding.noConnectionTv.isVisible = false
                 binding.recyclerView.isVisible = true
             } else {
                 // if the error is not null, show the error text view and hide the list
-                binding.recyclerView.isVisible = false
                 binding.noConnectionTv.isVisible = true
+                binding.recyclerView.isVisible = false
             }
+            binding.swipeRefreshLayout.isRefreshing = false
         }
     }
 
