@@ -21,3 +21,5 @@ under er en liten utsnitt av min applikasjon
 
 ![bySykkelApp](https://user-images.githubusercontent.com/71320559/138570927-b2a9adec-bb38-4bfe-b320-95028f2ad089.jpg)
 
+for å kjøre koden:
+Last ned dette prosjektet
