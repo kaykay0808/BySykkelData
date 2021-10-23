@@ -14,7 +14,7 @@ Jeg valgte også kotlin serialization for å analysere JSON
 
 Min applikasjon skal innholde feilhåndtering når telefonen er offline
 og brukeren skal bli innformert når man ikke har dekning.
-Når brukeren swiper vil data bli lastet inn for brukeren.
+Når brukeren swiper nedover vil ny data bli lastet inn for brukeren.
 
 under er en liten utsnitt av min applikasjon 
 
