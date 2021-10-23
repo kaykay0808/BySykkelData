@@ -1,6 +1,6 @@
 # BySykkelData
 
-Kodeoppgave for Origo OSlo
+Kodeoppgave for Origo Oslo
 
 I denne oppgaven skulle jeg vise sanntids data på Oslos BySykkel
 Informasjon som skulle vises var:
@@ -17,4 +17,6 @@ og brukeren skal bli innformert når man ikke har dekning.
 
 under er en liten utsnitt av min applikasjon 
 
+
+![bySykkelApp](https://user-images.githubusercontent.com/71320559/138570927-b2a9adec-bb38-4bfe-b320-95028f2ad089.jpg)
 
