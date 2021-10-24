@@ -13,7 +13,7 @@ Jeg valgte å gjøre ting så enkelt som mulig ved å sette opp Koin dependency 
 Jeg valgte også kotlin serialization for å analysere JSON
 
 Min applikasjon innholder feilhåndtering når telefonen er offline
-og brukeren skal bli innformert når man ikke har dekning. Jeg valgte "try catch" metoden for å løse feilhåndtering. 
+og brukeren skal bli innformert når man ikke har dekning. Jeg valgte "try catch" for å løse feilhåndtering. 
 Når brukeren swiper nedover vil ny data bli lastet inn for brukeren.
 
 under er et lite utsnitt av min applikasjon 
