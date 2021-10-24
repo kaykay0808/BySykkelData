@@ -12,11 +12,11 @@ c. Antall ledige “docks” (for tilbakelevering)
 Jeg valgte å gjøre ting så enkelt som mulig ved å sette opp Koin dependency injection framework.
 Jeg valgte også kotlin serialization for å analysere JSON
 
-Min applikasjon skal innholde feilhåndtering når telefonen er offline
-og brukeren skal bli innformert når man ikke har dekning.
+Min applikasjon innholder feilhåndtering når telefonen er offline
+og brukeren skal bli innformert når man ikke har dekning. Jeg valgte "try catch" metoden for å løse feilhåndtering. 
 Når brukeren swiper nedover vil ny data bli lastet inn for brukeren.
 
-under er en liten utsnitt av min applikasjon 
+under er et lite utsnitt av min applikasjon 
 
 
 ![bySykkelApp](https://user-images.githubusercontent.com/71320559/138570927-b2a9adec-bb38-4bfe-b320-95028f2ad089.jpg)
