@@ -2,7 +2,7 @@
 
 Kodeoppgave for Origo Oslo
 
-I denne oppgaven skulle jeg vise sanntids data på Oslos BySykkel
+I denne oppgaven skulle jeg vise sanntids data på Oslos BySykkel.
 Informasjon som skulle vises var:
 
 a. Navn på stasjonen
